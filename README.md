@@ -1,0 +1,16 @@
+- Input File Processing:
+    - The script will read a text file where each line contains user information in the format: `name, email, id`.
+    - Each field (name, email, id) is separated by a comma.
+- Determining Odd or Even ID:
+    - The script needs to check if the ID (which is the last column) is an odd or even number.
+    - This check should be done only if the ID is specified.
+- Email Validation:
+    - The script will check if the email address is a Fully Qualified Domain Name (FQDN) and routable.
+    - An FQDN email address generally has a domain that can be resolved via DNS and is not just a hostname like `localhost`.
+- Output Message:
+    - If the user has a valid email address and ID, the script should print a message to stdout indicating whether the ID is odd or even.
+    - The message format should be: `The $ID of $EMAIL is (even|odd) number.`
+    - `$ID` and `$EMAIL` should be replaced with the actual ID and email address from the file.
+- Handling Invalid Entries:
+    - If the email address is not valid or the ID is missing, the script should continue processing the next user without interruption.
+    - It should print a warning message for the invalid parameters, indicating what is wrong.
